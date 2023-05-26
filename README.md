@@ -1,4 +1,16 @@
 # Columnation
+
+> **Warning**
+>
+> Do **not** merge material changes to this fork. The occasional dependency bump
+> is acceptable, but all material changes must be submitted, reviewed and merged
+> upstream: <https://github.com/frankmcsherry/columnation>
+>
+> This fork exists solely because:
+>   * we have an organizational ban on Git dependencies outside of the
+>     MaterializeInc GitHub organization; and
+>   * the upstream project does not regularly release to crates.io.
+
 An experimental columnar arena
 
 Columnation borrows its name from [Abomonation](https://github.com/TimelyDataflow/abomonation), a Rust serialization framework that is very fast and very unsafe. Among Abomonation's unsafeties, it hosts typed data backed by `[u8]` slices, which causes anxiety for folks who worry about alignment, the visibility of padding bytes, and likely other things I don't yet know about.
